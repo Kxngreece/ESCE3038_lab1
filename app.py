@@ -1,15 +1,7 @@
 #Qu1
 def parallel(*resistor):
     
-   
-    
     if len(resistor) < 2:
-        print("Error: At least two resistors are required for parallel connection")
-
-    
-    # Calculate the total resistance using the formula for parallel resistors
-    # Initialize total reciprocal
-    
     parares = 0
     
     # Calculate the reciprocal of each resistance using a for loop
@@ -22,9 +14,6 @@ def parallel(*resistor):
 
 
 result = parallel(330, 1000, 2200)
-
-print("The total resistance of the parallel network is:" , result)
-
 
 #Qu 2
 def potential_divider(powersupply, resistors):
@@ -43,7 +32,6 @@ def potential_divider(powersupply, resistors):
 # resistors= [1000, 3000]  # Replace with your list of resistor values
 
 result = potential_divider(9, [3000, 1000])
-print("Voltage drops across resistors:", result)
 
 # Q3
 def temperature_check(temperature, unit):
@@ -68,9 +56,5 @@ def temperature_check(temperature, unit):
 
     return result
 
-# Example usage:
-print(temperature_check(14, "C"))
-print(temperature_check(37, "C"))
-print(temperature_check(37, "F"))
 
     
